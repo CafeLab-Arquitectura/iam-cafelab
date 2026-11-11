@@ -120,6 +120,9 @@ public class WebSecurityConfiguration {
 
         configuration.setAllowedOriginPatterns(
                 List.of(
+                        "*",
+                        "https://cafelab-arqui.web.app",
+                        "https://cafelab-arqui.firebaseapp.com",
                         "https://front-funda.web.app",
                         "http://localhost:*",
                         "http://127.0.0.1:*",

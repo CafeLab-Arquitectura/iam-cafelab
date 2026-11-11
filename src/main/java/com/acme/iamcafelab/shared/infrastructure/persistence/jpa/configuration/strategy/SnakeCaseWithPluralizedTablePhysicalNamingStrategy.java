@@ -3,9 +3,11 @@ package com.acme.iamcafelab.shared.infrastructure.persistence.jpa.configuration.
 import org.hibernate.boot.model.naming.Identifier;
 import org.hibernate.boot.model.naming.PhysicalNamingStrategy;
 import org.hibernate.engine.jdbc.env.spi.JdbcEnvironment;
+import org.springframework.stereotype.Component;
 
 import static io.github.encryptorcode.pluralize.Pluralize.pluralize;
 
+@Component
 public class SnakeCaseWithPluralizedTablePhysicalNamingStrategy implements PhysicalNamingStrategy {
 
     @Override
